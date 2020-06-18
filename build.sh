@@ -12,13 +12,10 @@ set -e
 #  parameters, will print the full command, with credentials, in the build logs.
 set -x
 
-apt-get update
-apt-get install -y git
-apt-get install -y docker
 docker --version
 
-if [ "$1" == "release" ]; then
-  javac -g:none Hello.java
-else
-  javac Hello.java
-fi
+#if [ "$1" == "release" ]; then
+#  javac -g:none Hello.java
+#else
+#  javac Hello.java
+#fi
